@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AV GLOBAL PATH</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">AV GLOBAL PATH</div>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#reach">Global Reach</a></li>
+        <li><a href="#why">Why Choose Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION WITH SLIDER -->
+  <div class="hero">
+    <div class="slides">
+      <div class="slide active" style="background-image: url('images/slide1.jpg');">
+        <div class="slide-content">
+          <h1>AV GLOBAL PATH</h1>
+          <p>Connecting Global Trade Seamlessly</p>
+        </div>
+      </div>
+      <div class="slide" style="background-image: url('images/slide2.jpg');">
+        <div class="slide-content">
+          <h1>Global Network</h1>
+          <p>Building Trusted Partnerships Worldwide</p>
+        </div>
+      </div>
+      <div class="slide" style="background-image: url('images/slide3.jpg');">
+        <div class="slide-content">
+          <h1>Reliable Brokerage</h1>
+          <p>Delivering Quality and Transparency</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="slider-controls">
+      <span class="arrow" id="prev">&#10094;</span>
+      <div class="dots">
+        <span class="dot active" data-index="0"></span>
+        <span class="dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+      </div>
+      <span class="arrow" id="next">&#10095;</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+<section id="about" class="about-section fade-in">
+  <div class="about-card">
+    <div class="about-inner">
+      <div class="about-front">
+        <h2>About Us</h2>
+      </div>
+      <div class="about-back">
+        <p>
+          AV GLOBAL PATH is a global brokerage firm facilitating international trade of commodities and equipment.
+          We connect buyers and suppliers across borders through transparent, efficient trade solutions.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- SERVICES -->
+  <section id="services" class="fade-in">
+    <h2>What We Deal In</h2>
+    <div class="services">
+      <div class="card">
+        <img src="images/mines.jpg" alt="Mines & Coals">
+        <h3>Mines & Coals</h3>
+      </div>
+      <div class="card">
+        <img src="images/fertilizer.jpg" alt="Fertilizers">
+        <h3>Fertilizers</h3>
+      </div>
+      <div class="card">
+        <img src="images/oil.jpg" alt="Oil & Gas">
+        <h3>Oil & Gas</h3>
+      </div>
+      <div class="card">
+        <img src="images/grains.jpg" alt="Grains">
+        <h3>Grains (Rice, Wheat, Corn, etc.)</h3>
+      </div>
+      <div class="card">
+        <img src="images/medical.jpg" alt="Medical Equipment">
+        <h3>Medical Equipment</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- GLOBAL REACH -->
+  <section id="reach" class="fade-in">
+    <h2>Global Reach</h2>
+    <p>We operate and have sourcing networks in Bangladesh, South Korea, Middle East, India, Bhutan, Nepal, and South Africa.</p>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section id="why" class="fade-in">
+    <h2>Why Choose Us</h2>
+    <div class="why-choose">
+      <div class="card">Trusted global network</div>
+      <div class="card">Transparent brokerage process</div>
+      <div class="card">Fast sourcing & logistics coordination</div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact fade-in">
+    <h2>Contact Us</h2>
+    <form onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 AV GLOBAL PATH. All Rights Reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
