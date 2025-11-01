@@ -484,7 +484,7 @@ footer {
 /* ---------- MODERN ABOUT FLIP CARD WITH ICON ---------- */
 
 .about-section {
-  background: url("./images/about-bg.jpg") center/cover no-repeat;
+  background: url("./Images/about-bg.jpg") center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -531,7 +531,7 @@ footer {
       rgba(0, 74, 173, 0.75),
       rgba(0, 119, 255, 0.75)
     ),
-    url("./images/CountryFlags/Worldmap2.svg");
+    url("./Images/CountryFlags/WorldMap2.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
