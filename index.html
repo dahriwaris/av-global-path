@@ -5,13 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AV GLOBAL PATH</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
+
   <body>
     <!-- NAVBAR -->
     <header class="navbar">
-      <div class="logo">AV GLOBAL PATH</div>
+      <a href="#hero" class="logo">
+        <img src="./Images/logo.jpg" alt="AV Global Path Logo" />
+        <h1>AV Global Path</h1>
+      </a>
       <nav>
-        <ul>
+        <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#reach">Global Reach</a></li>
@@ -19,6 +27,12 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+      <!-- Hamburger Icon for Mobile -->
+      <div class="menu-toggle" id="menu-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
     </header>
 
     <!-- HERO SECTION WITH SLIDER -->
@@ -69,15 +83,36 @@
       <div class="about-card">
         <div class="about-inner">
           <div class="about-front">
-            <h2>About Us</h2>
+            <div class="front-content">
+              <i class="fas fa-shipping-fast"></i>
+              <h2>Who We Are</h2>
+              <p>Your Global Logistics and Sourcing Experts.</p>
+            </div>
           </div>
           <div class="about-back">
-            <p>
-              AV GLOBAL PATH is a global brokerage firm facilitating
-              international trade of commodities and equipment. We connect
-              buyers and suppliers across borders through transparent, efficient
-              trade solutions.
-            </p>
+            <!-- <p>
+              <strong>AV GLOBAL PATH</strong> is dedicated to seamless
+              international trade, connecting you with reliable suppliers and
+              markets across the globe. We manage complexities so you can focus
+              on growth.
+            </p> -->
+            <div class="back-content">
+              <span class="text-line glow-text">
+                <span class="highlight reveal-text">AV GLOBAL PATH</span>
+                <span class="floating-words">
+                  <span>is a</span> <span>global</span> <span>brokerage</span>
+                  <span>firm</span>
+                  <!-- </span>
+                            facilitating international trade
+                        </span> -->
+                  <span class="text-line glow-text">
+                    facilitating international trade of commodities and
+                    equipment. We connect buyers and suppliers across borders
+                    through transparent, efficient trade solutions.</span
+                  >
+                </span>
+              </span>
+            </div>
           </div>
         </div>
       </div>
@@ -90,22 +125,42 @@
         <div class="card">
           <img src="./Images/mines.jpg" alt="Mines & Coals" />
           <h3>Mines & Coals</h3>
+          <p>
+            Sourcing high-quality mining materials and industrial coal for
+            energy and manufacturing sectors.
+          </p>
         </div>
         <div class="card">
           <img src="./Images/fertilizer.jpg" alt="Fertilizers" />
           <h3>Fertilizers</h3>
+          <p>
+            Global supply chain management for various agricultural fertilizers
+            to support crop growth.
+          </p>
         </div>
         <div class="card">
           <img src="./Images/oil.jpg" alt="Oil & Gas" />
           <h3>Oil & Gas</h3>
+          <p>
+            Brokering crude oil, refined petroleum products, and natural gas
+            transactions globally.
+          </p>
         </div>
         <div class="card">
           <img src="./Images/grains.jpg" alt="Grains" />
           <h3>Grains (Rice, Wheat, Corn, etc.)</h3>
+          <p>
+            Large-scale international trade of staple food grains, ensuring food
+            security and supply.
+          </p>
         </div>
         <div class="card">
           <img src="./Images/medical.jpg" alt="Medical Equipment" />
           <h3>Medical Equipment</h3>
+          <p>
+            Facilitating the trade of essential hospital supplies, advanced
+            diagnostics, and surgical equipment.
+          </p>
         </div>
       </div>
     </section>
@@ -334,26 +389,113 @@
     <section class="why-choose">
       <h2>Why Choose Us</h2>
       <div class="reasons">
-        <p>Trusted global network</p>
-        <p>Transparent brokerage process</p>
-        <p>Fast sourcing & logistics coordination</p>
+        <div class="card">
+          <i class="fas fa-globe-americas"></i>
+          <h3>Trusted global network</h3>
+          <p>
+            Leveraging deep connections with reliable suppliers and buyers
+            worldwide for optimal transactions.
+          </p>
+        </div>
+        <div class="card">
+          <i class="fas fa-clipboard-check"></i>
+          <h3>Transparent brokerage process</h3>
+          <p>
+            Clear, honest communication and documentation at every stage of the
+            trade cycle.
+          </p>
+        </div>
+        <div class="card">
+          <i class="fas fa-shipping-fast"></i>
+          <h3>Fast sourcing & logistics coordination</h3>
+          <p>
+            Efficient coordination of movement, inspection, and delivery,
+            minimizing lead times and risk.
+          </p>
+        </div>
       </div>
     </section>
 
     <!-- CONTACT -->
     <section id="contact" class="contact fade-in">
       <h2>Contact Us</h2>
-      <form
-        onsubmit="event.preventDefault(); alert('Message sent successfully!');"
-      >
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3>Our Global Head Office</h3>
+          <p class="contact-subtext">
+            We are ready to assist with your global brokerage needs. Reach out
+            today!
+          </p>
+
+          <div class="info-item">
+            <i class="fas fa-location-dot contact-icon"></i>
+            <p>Address Needed!</p>
+          </div>
+
+          <div class="info-item">
+            <i class="fas fa-envelope contact-icon"></i>
+            <p>
+              <a href="mailto:info@yourcompany.com">info@yourcompany.com</a>
+              <!-- /* change it - Azad */ -->
+            </p>
+          </div>
+
+          <div class="info-item">
+            <i class="fas fa-phone contact-icon"></i>
+            <p>
+              <a href="tel:+12125550100">+1 (212) 555-0100</a>
+              <!-- /* change it - Azad */ -->
+            </p>
+          </div>
+
+          <div class="social-links">
+            <!-- /* change it - Azad */ -->
+            <a href="#" aria-label="LinkedIn Profile"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="#" aria-label="Twitter Profile"
+              ><i class="fab fa-twitter-square"></i
+            ></a>
+            <a href="#" aria-label="Facebook Profile"
+              ><i class="fab fa-facebook-square"></i
+            ></a>
+          </div>
+        </div>
+
+        <form id="contact-form" onsubmit="sendMailto(event)">
+          <h3>Send Us a Message</h3>
+          <input
+            type="text"
+            id="name"
+            placeholder="Your Name"
+            name="name"
+            required
+          />
+          <input
+            type="email"
+            id="email"
+            placeholder="Your Email"
+            name="email"
+            required
+          />
+          <textarea
+            rows="5"
+            id="message"
+            placeholder="Your Message"
+            name="message"
+            required
+          ></textarea>
+          <button type="submit">Send Message</button>
+          <div id="form-message" class="form-message"></div>
+        </form>
+      </div>
     </section>
 
     <footer>© 2025 AV GLOBAL PATH. All Rights Reserved.</footer>
+
+    <button id="go-to-top" title="Go to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
 
     <script src="script.js"></script>
   </body>
