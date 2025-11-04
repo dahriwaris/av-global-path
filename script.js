@@ -57,6 +57,7 @@ function resetAutoSlide() {
 */
 const menuToggle = document.getElementById("menu-toggle");
 const navLinks = document.querySelector(".nav-links");
+const navbar = document.querySelector(".navbar");
 
 menuToggle.addEventListener("click", () => {
   navLinks.classList.toggle("active");
@@ -70,6 +71,29 @@ navLinks.querySelectorAll("a").forEach((link) => {
       menuToggle.classList.remove("active");
     }
   });
+});
+
+document.addEventListener("click", function (event) {
+  const clickedElement = event.target;
+
+  // Condition 1: Check if the clicked element is *NOT* the navbar itself
+  // Condition 2: Check if the clicked element is *NOT* inside the navbar
+
+  const isClickInsideNavbar = navbar.contains(clickedElement);
+
+  // You may also want to check if the clicked element is NOT the button that opens it:
+  const isClickOnmenuToggle = menuToggle && menuToggle.contains(clickedElement);
+
+  // If the navbar is currently visible AND the click is neither inside the navbar
+  // nor on the toggle button, then close the navbar.
+  if (
+    navLinks.classList.contains("active") &&
+    !isClickInsideNavbar &&
+    !isClickOnmenuToggle
+  ) {
+    navLinks.classList.remove("active");
+    menuToggle.classList.remove("active");
+  }
 });
 
 /*
@@ -142,3 +166,25 @@ function sendMailto(event) {
 
   return false;
 }
+
+// --------------------------------------------------------------------------
+// --- Scroll Effects (Header and Go-To-Top Button) ---
+// --------------------------------------------------------------------------
+const topButton = document.getElementById("go-to-top");
+window.onscroll = function () {
+  const scrollPosition =
+    document.body.scrollTop || document.documentElement.scrollTop;
+
+  // 2. Go-To-Top Button Visibility
+  if (scrollPosition > 200) {
+    topButton.style.display = "block";
+  } else {
+    topButton.style.display = "none";
+  }
+};
+
+topButton.addEventListener("click", function () {
+  // Smooth scroll to the top of the page
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+});

@@ -10,11 +10,13 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
   </head>
+
   <body>
     <!-- NAVBAR -->
     <header class="navbar">
       <a href="#hero" class="logo">
         <img src="./Images/logo.jpg" alt="AV Global Path Logo" />
+        <h1>AV Global Path</h1>
       </a>
       <nav>
         <ul class="nav-links">
@@ -88,12 +90,29 @@
             </div>
           </div>
           <div class="about-back">
-            <p>
+            <!-- <p>
               <strong>AV GLOBAL PATH</strong> is dedicated to seamless
               international trade, connecting you with reliable suppliers and
               markets across the globe. We manage complexities so you can focus
               on growth.
-            </p>
+            </p> -->
+            <div class="back-content">
+              <span class="text-line glow-text">
+                <span class="highlight reveal-text">AV GLOBAL PATH</span>
+                <span class="floating-words">
+                  <span>is a</span> <span>global</span> <span>brokerage</span>
+                  <span>firm</span>
+                  <!-- </span>
+                            facilitating international trade
+                        </span> -->
+                  <span class="text-line glow-text">
+                    facilitating international trade of commodities and
+                    equipment. We connect buyers and suppliers across borders
+                    through transparent, efficient trade solutions.</span
+                  >
+                </span>
+              </span>
+            </div>
           </div>
         </div>
       </div>
@@ -106,22 +125,42 @@
         <div class="card">
           <img src="./Images/mines.jpg" alt="Mines & Coals" />
           <h3>Mines & Coals</h3>
+          <p>
+            Sourcing high-quality mining materials and industrial coal for
+            energy and manufacturing sectors.
+          </p>
         </div>
         <div class="card">
           <img src="./Images/fertilizer.jpg" alt="Fertilizers" />
           <h3>Fertilizers</h3>
+          <p>
+            Global supply chain management for various agricultural fertilizers
+            to support crop growth.
+          </p>
         </div>
         <div class="card">
           <img src="./Images/oil.jpg" alt="Oil & Gas" />
           <h3>Oil & Gas</h3>
+          <p>
+            Brokering crude oil, refined petroleum products, and natural gas
+            transactions globally.
+          </p>
         </div>
         <div class="card">
           <img src="./Images/grains.jpg" alt="Grains" />
           <h3>Grains (Rice, Wheat, Corn, etc.)</h3>
+          <p>
+            Large-scale international trade of staple food grains, ensuring food
+            security and supply.
+          </p>
         </div>
         <div class="card">
           <img src="./Images/medical.jpg" alt="Medical Equipment" />
           <h3>Medical Equipment</h3>
+          <p>
+            Facilitating the trade of essential hospital supplies, advanced
+            diagnostics, and surgical equipment.
+          </p>
         </div>
       </div>
     </section>
@@ -350,9 +389,30 @@
     <section class="why-choose">
       <h2>Why Choose Us</h2>
       <div class="reasons">
-        <p>Trusted global network</p>
-        <p>Transparent brokerage process</p>
-        <p>Fast sourcing & logistics coordination</p>
+        <div class="card">
+          <i class="fas fa-globe-americas"></i>
+          <h3>Trusted global network</h3>
+          <p>
+            Leveraging deep connections with reliable suppliers and buyers
+            worldwide for optimal transactions.
+          </p>
+        </div>
+        <div class="card">
+          <i class="fas fa-clipboard-check"></i>
+          <h3>Transparent brokerage process</h3>
+          <p>
+            Clear, honest communication and documentation at every stage of the
+            trade cycle.
+          </p>
+        </div>
+        <div class="card">
+          <i class="fas fa-shipping-fast"></i>
+          <h3>Fast sourcing & logistics coordination</h3>
+          <p>
+            Efficient coordination of movement, inspection, and delivery,
+            minimizing lead times and risk.
+          </p>
+        </div>
       </div>
     </section>
 
@@ -432,6 +492,10 @@
     </section>
 
     <footer>© 2025 AV GLOBAL PATH. All Rights Reserved.</footer>
+
+    <button id="go-to-top" title="Go to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
 
     <script src="script.js"></script>
   </body>
