@@ -135,7 +135,7 @@ function sendMailto(event) {
   const email = document.getElementById("email").value;
   const message = document.getElementById("message").value;
 
-  const recipient = "info@yourcompany.com"; // change it - Azad
+  const recipient = "avtravel763@gmail.com";
 
   const subject = encodeURIComponent(
     `New Contact Form Submission from ${name}`
