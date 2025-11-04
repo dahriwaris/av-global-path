@@ -1443,6 +1443,12 @@ footer {
     }
   }
 
+  .about-back {
+    font-size: 0.9rem;
+    padding: 10px;
+    padding-top: 20px;
+  }
+
   #reach {
     padding: 60px 5%;
   }
