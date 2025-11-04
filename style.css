@@ -26,7 +26,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 10%;
+  padding: 10px 20px;
   z-index: 1000;
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -36,6 +36,13 @@ body {
   font-size: 1.5rem;
   font-weight: 600;
   z-index: 1001;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+  transition: transform 0.3s;
+  border-radius: 50%;
 }
 
 .nav-links {
@@ -214,7 +221,8 @@ section p {
  5. ABOUT SECTION (FLIP CARD)
 */
 .about-section {
-  background: url("./Images/AboutBg.png") center/cover no-repeat;
+  background: url("https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80")
+    center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -259,7 +267,7 @@ section p {
       rgba(0, 74, 173, 0.85),
       rgba(0, 119, 255, 0.85)
     ),
-    url("./Images/CountryFlags/WorldMap2.svg");
+    url("https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1120&q=80");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -389,9 +397,9 @@ section p {
 /* Map & Markers */
 .map-container {
   position: relative;
-  max-width: 1200px;
+  max-width: 800px;
   margin: 0 auto;
-  padding: 40px 0;
+  padding: 10px 0;
   animation: fadeIn 1s ease 0.4s both;
 }
 
@@ -597,7 +605,7 @@ section p {
 .country-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  border-top-color: #ffcc00;
+  border-top: 3px solid #004aad;
 }
 
 .country-card .flag-icon {
@@ -608,7 +616,7 @@ section p {
 
 .country-card h3 {
   font-size: 1.1rem;
-  margin-bottom: 0.5rem;
+  margin-block: 0.5rem;
   color: #222;
 }
 
@@ -672,9 +680,8 @@ section p {
  9. CONTACT SECTION
 */
 .contact {
-  background-color: #f8f9fa;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   padding: 80px 10%;
-  border-top: 1px solid #e0e0e0;
 }
 
 .contact h2 {
@@ -724,7 +731,7 @@ section p {
 
 .contact-icon {
   font-size: 1.5rem;
-  color: #ffcc00;
+  color: #e0e0e0;
   margin-right: 15px;
   min-width: 24px;
   text-align: center;
@@ -747,7 +754,7 @@ section p {
 }
 
 .contact-info a:hover {
-  border-bottom: 1px solid #ffcc00;
+  border-bottom: 1px solid #e0e0e0;
 }
 
 /* Social Links */
@@ -772,7 +779,7 @@ section p {
 }
 
 .social-links a:hover {
-  background-color: #ffcc00;
+  background-color: #e0e0e0;
   color: #004aad;
   transform: translateY(-3px) scale(1.05);
 }
@@ -814,8 +821,8 @@ section p {
 }
 
 #contact-form button[type="submit"] {
-  background-color: #ffcc00;
-  color: #004aad;
+  background-color: #003087;
+  color: #e0e0e0;
   padding: 15px 25px;
   border: none;
   border-radius: 8px;
@@ -824,13 +831,14 @@ section p {
   cursor: pointer;
   transition: background-color 0.3s, transform 0.1s;
   letter-spacing: 0.5px;
-  box-shadow: 0 4px 10px rgba(255, 204, 0, 0.4);
+  box-shadow: 0 4px 10px rgba(4, 55, 223, 0.4);
 }
 
 #contact-form button[type="submit"]:hover {
-  background-color: #e6b800;
+  background-color: #ffffff;
+  color: #003087;
   transform: translateY(-2px);
-  box-shadow: 0 6px 15px rgba(255, 204, 0, 0.6);
+  box-shadow: 0 6px 15px rgba(197, 197, 197, 0.6);
 }
 
 #contact-form button[type="submit"]:active {
