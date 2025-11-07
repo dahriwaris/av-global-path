@@ -885,6 +885,14 @@ section p {
   animation-delay: 0.7s;
 }
 
+.country-card:nth-child(8) {
+  animation-delay: 0.8s;
+}
+
+.country-card:nth-child(9) {
+  animation-delay: 0.9s;
+}
+
 .country-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
@@ -926,9 +934,12 @@ section p {
  8. WHY CHOOSE US SECTION
 */
 .why-choose {
-  background: #f8f9fa;
+  /* background: #f8f9fa; */
   padding: 60px 20px;
   text-align: center;
+  width: 90vw;
+  max-width: 1000px;
+  margin-inline: auto;
 }
 
 .why-choose h2 {
@@ -1011,6 +1022,10 @@ section p {
   display: flex;
   align-items: flex-start;
   margin-bottom: 25px;
+}
+
+.info-item p {
+  text-align: left;
 }
 
 .contact-icon {
@@ -1171,11 +1186,11 @@ footer {
   font-size: 0.9rem;
 }
 
-#go-to-top {
+.floating-button {
   position: fixed;
-  bottom: 30px;
-  right: 30px;
-  background-color: #004aad;
+  bottom: 20px;
+  right: 20px;
+  background-color: #00ad2b;
   color: #e0e0e0;
   border: none;
   border-radius: 50%;
@@ -1186,14 +1201,24 @@ footer {
   text-align: center;
   cursor: pointer;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  display: none;
   z-index: 999;
   transition: background-color 0.3s, transform 0.3s;
 }
 
-#go-to-top:hover {
-  background-color: #0088ff;
+.floating-button a {
+  color: #e0e0e0;
+}
+
+.floating-button:hover {
   transform: translateY(-2px);
+}
+
+#go-to-top {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  background-color: #004aad;
+  display: none;
 }
 
 /*
